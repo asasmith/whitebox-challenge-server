@@ -2,9 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  return res.send('hello world')
+  return res.send('hello world from server.js')
 })
 
-app.listen(1111, () => {
-  console.log(`app listening on port 1111`)
-})
+module.exports = app
