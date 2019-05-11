@@ -1,14 +1,17 @@
 const express = require('express')
+const cors = require('cors')
 const axios = require('axios')
 
 const app = express()
+
+app.use(cors())
 
 app.get('/', (req, res) => {
   return res.send('hello world from server.js')
 })
 
 // api call to get products
-const getData = () => axios.get('https://next.json-generator.com/api/jsn/get/EkzBIUWNL')
+const getData = () => axios.get('https://next.json-generator.com/api/json/get/EkzBIUWNL')
 
 // get all products
 app.get('/products', async (req, res) => {
