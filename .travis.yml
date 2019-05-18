@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - stable
+- stable
 sudo: false
 cache:
   directories:
@@ -11,3 +11,6 @@ install:
 - npm install
 after_script:
 - npm run coveralls
+deploy:
+  api_key:
+    secure: HE4kSjJBhmGcurxdn7vExGESfmlXQqCJ7qlFHpyiVxRCsVdzfG0eaQkR9YeCmzbMxTmgWLgukBvagz1CSi+yq9MoQZV6z+UhCwePAZaENEZYMvO23xtIzuij/rJpyL7ni+L+Ghk2nl4/Js7BEicinezaakf1gNRYdiY0k956xA974xKmVT+L/isiEz1LuEf8RzMIC1kgVLgn6fw2mW7hYMY1v76enzutTT1jZgLL61uLdrdjp1EyThXY+JjkHOtpB+/Wz2IMXDunLbUae/Oeyh0WpxapDkAkenU7T1PuiW1lMNmQIyD4GahHp5MV+Imv0BZ7MPVla7f6MkxoJVU7MK70SZYmUhHclmr5CXfxYZt7qgQTTEYabz3/6uqCUP5Sua0sFkBcRBA5TD1ce9UqqsXKPd3rRE++J5qIZND7t25z54QA3akYTXQG2qOAeiEvYrmW9IWd0BBuUNPaCs3A61NW4G4XDJbAJXYGYLNciV9xkj0Bicmh818ALgw0nFsDRlytOp0QdxAZUG12hiXA9BTdh+RuaknQfrV7doXljIBF5NokPon9tQpxzxPSl2KMNvTtal6+6EuV3uLODoVelfbnsdVPtO75CYqTL9xSEj7ga0QvKAalped4SQxqXMl7yBx/fAbyTuBZNQfCQad3errjNkXUfYflJb8rLgWuWDM=
