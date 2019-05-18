@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch-test": "jest --watch",
+    "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +17,12 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "coveralls": "^3.0.3",
     "jest": "^24.8.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   }
 }
